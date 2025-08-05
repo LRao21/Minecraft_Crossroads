@@ -21,10 +21,10 @@ function Footer() {
 
     return (
         <footer className = "footer">
-            <div className = "content-description">
+            <div className = "footer-content-description">
                 <h2 id = "footer-title">Minecraft Crossroads</h2>
                 <h4 id = "footer-desc">What happens when you let a couple of everyday Minecraft mobs
-                    learn about architecture :D
+                    learn about architecture
                 </h4>
                 <p id = "footer-data">Made with React</p>
             </div>
