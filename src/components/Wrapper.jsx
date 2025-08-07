@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/Wrapper.css';
 
-import navBar from './Navigation';
-import footer from './Footer';
+import NavBar from './Navigation';
+import Footer from './Footer';
 
 /**
  * Wrapper component for the Minecraft CrossRoads website
@@ -17,9 +17,9 @@ function Wrapper({children}) {
   //every page will have a nav bar and a footer regardless of the content
   return (
     <div className="wrapper">
-        <div className = "container"> {navBar} </div>
+        <NavBar />
         {children}
-        <div className = "container"> {footer} </div>
+        <Footer/>
     </div>
   );
 }

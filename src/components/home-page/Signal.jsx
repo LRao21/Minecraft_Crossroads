@@ -13,12 +13,12 @@ import signalImage from '../public/images/signal_image.png';
 
 function Signal() {
     return (
-         <section class="signal">
+         <section className="signal">
                 <p>Crossroads! Crossroads? Great question! Whose crossroads may these be? Another great question!
                     Do explore the about section to better understand who we may be, and thus what crossroads we see. 
                 </p>
                 <a href = "/about">About The Team</a>
-                {signalImage}
+                <img src={signalImage} alt="Steve's finalized tower, documented by the team from afar" />
 				<p>"Steve's finalized tower, documented by the team from afar"</p>
         </section>
     );
