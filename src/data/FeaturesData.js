@@ -1,3 +1,4 @@
+//Data for the features cards on the homepage
 export const FeaturesData = [
     {
         id: 1,
