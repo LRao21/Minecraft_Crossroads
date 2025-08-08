@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Home.css';
 
+//Home page section imports
 import NavBar from '../components/Navigation.jsx';
 import HeroSection from '../components/home-page/HeroSection';
 import Introduction from '../components/home-page/Introduction';
