@@ -2,6 +2,8 @@ import React from 'react';
 import siteLogo from '../assets/site-logo.svg';
 import '../styles/Navigation.css';
 
+import { Link } from 'react-router-dom';
+
 /**
  * Navigation component for the Minecraft CrossRoads website
  * Provides navigation links to all main pages
@@ -32,13 +34,13 @@ function Navigation() {
     return (
         <nav className = "page-nav">
             <div className = "site-logo">
-                <a href = "/">
+                <Link to= "/">
                     <img src = {siteLogo} alt = "Minecraft Crossroads"/>
-                </a>
+                </Link>
             </div>
             <div className = "nav-links">
                 {navLinks.map(
-                    (link) => (<a href = {link.url} key = {link.name}>{link.name}</a>)
+                    (link) => (<Link to={link.url} key = {link.name}>{link.name}</Link>)
                 )}  
             </div>
         </nav>

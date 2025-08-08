@@ -29,6 +29,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/map" element={<Map />} />
           <Route path="/reviews" element={<Reviews />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>
     </BrowserRouter>
