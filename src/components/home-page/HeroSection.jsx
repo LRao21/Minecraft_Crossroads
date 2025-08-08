@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Hero.css';
+import '../../styles/Hero.css';
 
 /**
  * Hero Section (text) component for the Minecraft CrossRoads website

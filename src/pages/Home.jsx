@@ -1,11 +1,11 @@
 import React from 'react';
 import '../styles/Home.css';
 
-import NavBar from '../components/home-page/Navigation';
+import NavBar from '../components/Navigation.jsx';
 import HeroSection from '../components/home-page/HeroSection';
 import Introduction from '../components/home-page/Introduction';
-import FeatureSection from '../components/home-page/Features';
-import Footer from '../components/home-page/Footer';
+import Features from '../components/home-page/Features';
+import Footer from '../components/Footer';
 
 /**
  * Home page component for the Minecraft CrossRoads website
@@ -20,8 +20,10 @@ function Home() {
             <NavBar />
             <HeroSection />
             <Introduction />
-            <FeatureSection />
+            <Features />
             <Footer />
         </div>
     );
 }
+
+export default Home;

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Introduction.css';
+import '../../styles/Introduction.css';
 
 /**
  * Introduction Section component for the Minecraft CrossRoads website

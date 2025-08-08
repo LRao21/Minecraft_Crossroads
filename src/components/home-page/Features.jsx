@@ -1,8 +1,8 @@
 import React from 'react';
-import '../styles/Features.css';
+import '../../styles/Features.css';
 
-import featureCards from './FeatureCards.jsx';
-import FeatureCardData from 'src/data/FeaturesData.js';
+import FeatureCard from './FeatureCard.jsx';
+import { FeaturesData } from '../../data/FeaturesData.js';
 
 /**
  * Features component for the Minecraft CrossRoads website
@@ -15,7 +15,7 @@ function Features(){
         <section className="showcase">
             <h3>To Which CrossRoad Will You Travel?</h3>
             <div className="feature-cards">
-                {FeatureCardData.map((feature) => (
+                {FeaturesData.map((feature) => (
                     <FeatureCard
                         key={feature.id}
                         title={feature.title}

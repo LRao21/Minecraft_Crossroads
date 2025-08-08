@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/FeatureCard.css';
+import '../../styles/FeatureCard.css';
 
 /**
  * Feature Card component for the Minecraft CrossRoads website
