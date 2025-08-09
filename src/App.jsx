@@ -10,6 +10,7 @@ import BuildWithMe from './pages/Build-With-Me.jsx';
 import Gallery from './pages/Gallery.jsx';
 import Map from './pages/Map.jsx';
 import Reviews from './pages/Reviews.jsx';
+import PageNotFound from './pages/Page-Not-Found.jsx';
 
 /**
  * App component for the Minecraft CrossRoads website
