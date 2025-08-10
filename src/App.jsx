@@ -27,18 +27,20 @@ function App() {
     <BrowserRouter>
       <div className="app">
         <Navigation />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/build-planner" element={<BuildPlanner />} />
-            <Route path="/build-with-me" element={<BuildWithMe />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/map" element={<Map />} />
-            <Route path="/reviews" element={<Reviews />} />
-            <Route path="*" element={<PageNotFound />} />
-          </Routes>
-        </main>
+        <div className = "wrapper">
+          <main>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/build-planner" element={<BuildPlanner />} />
+              <Route path="/build-with-me" element={<BuildWithMe />} />
+              <Route path="/gallery" element={<Gallery />} />
+              <Route path="/map" element={<Map />} />
+              <Route path="/reviews" element={<Reviews />} />
+              <Route path="*" element={<PageNotFound />} />
+            </Routes>
+          </main>
+        </div>
         <Footer />
       </div>
     </BrowserRouter>

@@ -1,5 +1,8 @@
 import React from 'react';
 import '../../styles/Introduction.css';
+import { Link } from 'react-router-dom';
+
+import heroImage from '../../../../public/images/signal_image.png'
 
 /**
  * Introduction Section component for the Minecraft CrossRoads website
@@ -10,14 +13,16 @@ import '../../styles/Introduction.css';
 
 function Introduction() {
     return (
-        <section class="introduction">
+        <section className="introduction">
+            <img src={heroImage} alt="Steve's tower, as documented by the team from afar" />
+
             <div id = "intro-purpose">
                 <h3>Minecraft provides the opportunity to recreate one's perspective.</h3>
                 <p>
-                    Whether that be by <a href = "/build-with-me">creating things only ever imagined</a>, 
+                    Whether that be by <Link to = "/build-with-me">creating things only ever imagined</Link>, 
                     exploring and understanding the unfamiliar, 
                     or experimenting with the things thought to be known moments before, 
-                    there's always a story to tell! For us at <a href="/about">Minecraft CrossRoads</a>,
+                    there's always a story to tell! For us at <Link to="/about">Minecraft CrossRoads</Link>,
                      Minecraft recreated our familiar through the stories of our friends,
                      whether that be through the occassional talks of new biome features or adventures following
                      Steve and their many projects. 
@@ -40,11 +45,11 @@ function Introduction() {
                 <h4>Minecraft Crossroads wants to explore those questions 
                     and analyze the “Minecraft architect” as we understand it.</h4>
                 <p>
-                    In our pages, you'll find <a href = "/build-with-me">our explorations of example builds</a>,
-                    <a href = "/gallery-external">analysis of architectural elements and their Minecraft counterparts</a>,
-                    <a href = "/gallery-steve">pictoral documentation of our interactions and learnings from our world</a>, 
+                    In our pages, you'll find <Link to = "/build-with-me">our explorations of example builds</Link>,
+                    analysis of architectural elements and their Minecraft counterparts,
+                    <Link to = "/gallery">pictoral documentation of our interactions and learnings from our world</Link>, 
 			 		and much more! 
-                    We also are working on <a href = "/build-planner">an experimental feature:</a>one where you could play with 
+                    We also are working on <Link to = "/build-planner">an experimental feature:</Link>one where you could play with 
                     floorplan ideas at a basic level, letting you decide in advance how your visions might look without the need to 
                     bust out a book and quill.
 			 	</p>

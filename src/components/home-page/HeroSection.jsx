@@ -12,7 +12,7 @@ function HeroSection() {
     return (
         <section className = "hero-section">
             <h1>Minecraft Crossroads</h1>
-            <h2>A place to see where Minecraft and "Real-World" architectural elements cross paths, 
+            <h2>To see where Minecraft and "Real-World" architectural elements cross paths, 
                 and where they forge their own. </h2>
         </section>
     );
