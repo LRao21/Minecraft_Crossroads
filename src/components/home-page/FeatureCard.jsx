@@ -1,6 +1,11 @@
 import React from 'react';
 import '../../styles/FeatureCard.css';
 
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
+
+
 /**
  * Feature Card component for the Minecraft CrossRoads website
  * 
@@ -10,12 +15,14 @@ import '../../styles/FeatureCard.css';
  */
 
 function FeatureCard({ title, image, description, link, linkName }) {
+    const navigate = useNavigate();
+
     return (
         <div className="feature-card">
             <h4 className="feature-title">{title}</h4>
             <img src={image} alt={title} className="feature-image" />
             <p className="feature-description">{description}</p>
-            <a href={link} className="feature-link">{linkName}</a>
+            <Button className="feature-link" onClick={() => navigate(link)}>{linkName}</Button>
         </div>
     );
 }
