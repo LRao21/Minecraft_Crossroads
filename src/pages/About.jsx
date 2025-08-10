@@ -7,7 +7,10 @@ function About(){
     return(
         <div className="about-page">
             <Wrapper 
-                //title -> h1 tag
+                key = "about-wrapper"
+                children = {
+                    <h1>About Us</h1>,
+                }
                 //Faq section -> component + data page
                 //history sectiion 
                 //team section
