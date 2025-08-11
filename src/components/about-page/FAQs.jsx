@@ -17,7 +17,10 @@ function FAQs(){
             <div className="faq-cards">
                 {FAQ.map((faq) => (
                     <FAQCard
-                        
+                        key = {faq.id}
+                        question = {faq.question}
+                        answer = {faq.answer}
+                        images = {faq.images}
                     />
                 ))}
             </div>
