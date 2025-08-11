@@ -1,5 +1,6 @@
 import React from 'react';
-import '../../styles/FAQCard.css';
+import { useState } from 'react';
+import '../../styles/about-page/FAQCard.css'
 
 /**
  * FAQ Card component for the Minecraft CrossRoads website
@@ -9,17 +10,41 @@ import '../../styles/FAQCard.css';
  * @author Lavanya Rao
  */
 
-function FAQCard({ question, answer, image }) {
+
+function FAQCard({ question, answer, images }) {
+    const [isOpen, setIsOpen] = useState(false);
+    
+    const changeVisibility = () => {setIsOpen(!isOpen);};
+    
     return (
         <div className="faq-card">
-            <div className="feature-title">
-                <button>{question}</button>
-            </div>
-            <img src={image} alt={title} className="feature-image" />
-            <p className="feature-description">{description}</p>
-            <a href={link} className="feature-link">{linkName}</a>
+            <button onClick={changeVisibility} className="faq-question">
+                {question}
+            </button>
+            
+            if (isOpen) {
+                <div className="faq-content">
+                    <div className="faq-answer">
+                        {answer.split('\n\n').map((paragraph, index) => (
+                            <p key={index}>{paragraph}</p>
+                        ))}
+                    </div>
+
+                    if (images.length !== 0) {
+                        images.map((img, index) => (
+                            <img 
+                                key={index}
+                                src={img.src} 
+                                alt={img.alt}
+                                className="faq-image"
+                            />
+                        ))
+                    }
+                </div>
+            }
+            
         </div>
     );
 }
 
-export default FeatureCard;
+export default FAQCard;

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/FAQs.css';
+import '../../styles/about-page/FAQs.css'
 
 import { FAQ } from '../../data/FAQ.js'
 import FAQCard from './FAQCard.jsx';
