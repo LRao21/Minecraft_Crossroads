@@ -4,7 +4,6 @@ import React from 'react';
 import HeroSection from '../components/home-page/HeroSection';
 import Introduction from '../components/home-page/Introduction';
 import Features from '../components/home-page/Features';
-import Signal from '../components/home-page/Signal';
 
 /**
  * Home page component for the Minecraft CrossRoads website
